@@ -71,6 +71,7 @@ public class PentahoExecutor {
    
    private TransMeta createTransMeta(String name) throws KettleException, KettleMissingPluginsException{
 	   
+	   System.out.println("********** calling Trabsmeta " +name);
 	   TransMeta transmeta = new TransMeta("res:"+name);
 	   metadataMap.put(name, transmeta);
 	   return transmeta;
